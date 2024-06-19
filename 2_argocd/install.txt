@@ -1,0 +1,10 @@
+- argocd  is already installed by kubespray
+- metallb is already installed by an former step
+- we have to set the service-type to LoadBalancer
+# kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+
+- the initial username/password has been set by kubespray
+- we have to check the login
+# argocd login --core
+or
+# argocd login 192.168.56.200 --insecure --username admin --password admin
