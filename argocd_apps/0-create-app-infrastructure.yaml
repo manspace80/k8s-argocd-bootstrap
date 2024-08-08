@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://git67: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@github.com/git67/k8s-argocd-bootstrap'
     targetRevision: HEAD
-    path: 'infrastruktur/apps'
+    path: 'argocd_apps/infrastruktur'
     directory:
       recurse: true
   destination:

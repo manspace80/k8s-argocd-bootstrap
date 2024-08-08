@@ -19,9 +19,9 @@ spec:
           value: LoadBalancer
         - name: kong.proxy.annotations.\external-dns\.alpha\.kubernetes\.io/hostname
           value: k8s
-    chart: kubernetes-dashboard
+    chart: metallb/metallb
   sources: []
-  project: default
+  project: infrastruktur
   syncPolicy:
     automated:
       prune: true
