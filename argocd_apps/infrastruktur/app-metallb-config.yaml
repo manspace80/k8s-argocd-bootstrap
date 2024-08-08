@@ -18,6 +18,6 @@ spec:
     automated:
       prune: true
       allowEmpty: true
-      selfHeal: true
-  dependencies:
-    - metallb-install
+      selfHeal: false
+#  dependencies:
+#    - metallb-install
