@@ -1,24 +1,24 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kubernetes-dashboard
+  name: infrastruktur-app
   namespace: argocd
 spec:
   destination:
     name: ''
-    namespace: kubernetes-dashboard
+    namespace: metallb-system
     server: 'https://kubernetes.default.svc'
   source:
     path: ''
-    repoURL: 'https://kubernetes.github.io/dashboard/'
-    targetRevision: 7.4.0
+    repoURL: 'https://metallb.github.io/metallb/'
+    #targetRevision: 7.4.0
     helm:
       values: ''
       parameters:
-        - name: kong.proxy.type
-          value: LoadBalancer
-        - name: kong.proxy.annotations.\external-dns\.alpha\.kubernetes\.io/hostname
-          value: k8s
+        - name: create-namespace
+          value: true
+        - name: namespace
+          value: metallb-system
     chart: metallb/metallb
   sources: []
   project: infrastruktur
