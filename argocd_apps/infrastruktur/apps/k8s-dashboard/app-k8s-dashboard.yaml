@@ -17,6 +17,8 @@ spec:
       parameters:
         - name: kong.proxy.type
           value: LoadBalancer
+        - name: kong.proxy.annotations.\external-dns\.alpha\.kubernetes\.io/hostname
+          value: k8s
     chart: kubernetes-dashboard
   sources: []
   project: default
