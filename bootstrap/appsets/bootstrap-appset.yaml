@@ -12,7 +12,7 @@ spec:
       repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
       revision: HEAD
       directories:
-      - path: bootstrap/apps/app2
+      - path: bootstrap/apps/*
   template:
     metadata:
       name: '{{index .path.segments 1}}'

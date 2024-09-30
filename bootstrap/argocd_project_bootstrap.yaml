@@ -17,12 +17,6 @@ spec:
     - kind: allow
       schedule: "* * * * *"
       duration: "2m"
-  roles:
-    - name: admin
-      policies:
-        - p, proj:bootstrap:admin, applications, *, bootstrap/*, allow
-      groups:
-        - admin
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
