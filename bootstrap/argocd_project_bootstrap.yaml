@@ -30,7 +30,7 @@ metadata:
   name: bootstrap
   namespace: argocd
 spec:
-  project: default
+  project: bootstrap
   source:
     repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
     targetRevision: HEAD
