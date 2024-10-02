@@ -12,10 +12,10 @@ spec:
       repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
       revision: HEAD
       directories:
-      - path: bootstrap/apps/*
+      - path: bootstrap/apps
   template:
     metadata:
-      name: '{{index .path.segments 1}}'
+      name: '{{index .path.segments 2}}'
     spec:
       # The project the application belongs to.
       project: bootstrap
@@ -29,7 +29,7 @@ spec:
       # Destination cluster and namespace to deploy the application
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{index .path.segments 1}}'
+        namespace: '{{index .path.segments 2}}'
 
       # Sync policy
       syncPolicy:
