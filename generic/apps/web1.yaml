@@ -8,7 +8,7 @@ spec:
   project: bootstrap
   source:
     repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
-    path: web1
+    path: generic/apps/web1
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
