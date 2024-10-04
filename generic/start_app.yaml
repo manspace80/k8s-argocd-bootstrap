@@ -5,7 +5,7 @@ metadata:
   name: generic-apps
   namespace: argocd
 spec:
-  project: bootstrap
+  project: default
   source:
     repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
     path: generic/apps
