@@ -2,13 +2,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: web2
+  name: web3
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: bootstrap
   source:
     repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
-    path: generic/apps/web2
+    path: generic/apps/web3
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
