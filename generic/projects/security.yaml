@@ -4,6 +4,8 @@ kind: AppProject
 metadata:
   name: security
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   sourceRepos:
     - https://github.com/git67/k8s-argocd-bootstrap.git
