@@ -21,7 +21,7 @@ spec:
           value: k8s
     chart: kubernetes-dashboard
   sources: []
-  project: default
+  project: bootstrap
   syncPolicy:
     automated:
       prune: true
