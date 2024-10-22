@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/git67/k8s-argocd-bootstrap.git
+    repoURL: https://github.com/manspace80/k8s-argocd-bootstrap.git
     path: generic/projects
     targetRevision: HEAD
   destination:

@@ -6,7 +6,7 @@ metadata:
   namespace: argocd
 spec:
   sourceRepos:
-    - https://github.com/git67/k8s-argocd-bootstrap.git
+    - https://github.com/manspace80/k8s-argocd-bootstrap.git
   destinations:
     - namespace: '*'
       server: https://kubernetes.default.svc
